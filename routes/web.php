@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('hours');
 });
 
 Route::get('/hours',function() {
    
-   return seconds_to_hours(360);
+   return seconds_to_hours(1000);
 });
