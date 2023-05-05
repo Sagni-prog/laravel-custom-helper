@@ -21,3 +21,8 @@ Route::get('/hours',function() {
    
    return seconds_to_hours(1000);
 });
+
+Route::get('now', function() {
+   
+   return get_current_data();
+});
